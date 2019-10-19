@@ -8,21 +8,21 @@ if [ "$first" != 1 ];then
     if [ ! -f "ubuntu.tar.gz" ]; then
         printf '\e[38;5;220m Downloading the ubuntu rootfs...\n'
         if [ "$(dpkg --print-architecture)" = "aarch64" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-arm64.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-arm64.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "arm" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-armhf.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-armhf.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "x86_64" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-amd64.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-amd64.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "x86" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-i386.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-i386.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "amd64" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-amd64.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-amd64.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "i686" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-i386.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-i386.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "i386" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-i386.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.010/release/ubuntu-base-19.10-base-i386.tar.gz -O ubuntu.tar.gz -q
         elif [ "$(dpkg --print-architecture)" = "i586" ];then
-            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.04/release/ubuntu-base-19.04-base-i386.tar.gz -O ubuntu.tar.gz -q
+            wget http://cdimage.ubuntu.com/ubuntu-base/releases/19.10/release/ubuntu-base-19.10-base-i386.tar.gz -O ubuntu.tar.gz -q
 
 
 
